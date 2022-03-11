@@ -1,0 +1,16 @@
+.movie_box {
+  padding: 50px;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  
+}
+
+.movie_item {
+  padding: 1px;
+  margin: 20px;
+  border-radius: 5px;
+  width: 280px;
+  border: solid;
+  list-style: none;
+}

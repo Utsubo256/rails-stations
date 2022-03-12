@@ -14,3 +14,25 @@
   border: solid;
   list-style: none;
 }
+
+.movie_table {
+  border: solid 1px black;
+  border-collapse: collapse;
+  width: 95%;
+  table-layout: fixed;
+  th {
+    background-color: royalblue;
+    border: solid 1px black;
+    width: 15%;
+  }
+  td {
+    border: solid 1px black;
+    width: 15%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .centered_cell {
+    text-align: center;
+  }
+}

@@ -1,6 +1,6 @@
 <h1>映画一覧</h1>
 
-<table class="movie_table">
+<table>
   <tr>
     <th>ID</th>
     <th>タイトル</th>
@@ -18,11 +18,7 @@
       <td class="centered_cell"><%= movie.year %></td>
       <td><%= movie.description %></td>
       <td><%= link_to movie.image_url, movie.image_url, target: :_blank %></td>
-      <% if movie.is_showing == true %>
-        <td class="centered_cell">上映中</td>
-      <% else %>
-        <td class="centered_cell">上映予定</td>
-      <% end %>
+      <td class="centered_cell"><%= movie.is_showing ? '上映中' : '上映予定' %></td>
       <td class="centered_cell"><%= movie.created_at %></td>
       <td class="centered_cell"><%= movie.updated_at %></td>
     </tr>

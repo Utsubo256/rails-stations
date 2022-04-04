@@ -36,3 +36,86 @@ table {
     text-align: center;
   }
 }
+
+.block {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: lightgray;
+  .block2 {
+    display: flex;
+    align-items: center;
+    p {
+      border: solid 1px;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+    }
+    input {
+      margin-left: 15px;
+      width: 90%;
+      height: 40px;
+    }
+    select {
+      margin-left: 15px;
+      width: 90%;
+      height: 40px;
+    }
+    textarea {
+      margin-left: 15px;
+      width: 90%;
+      height: 40px;
+    }
+    url {
+      margin-left: 15px;
+      width: 90%;
+      height: 40px;
+    }
+  }
+}
+
+.movie_admin_btn {
+  float: right;
+  margin: 10px;
+  button {
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 3px;
+    width: 60px;
+    height: 30px;
+  }
+  input {
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    width: 80px;
+    height: 30px;
+  }
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  // @extend .has-error;
+  .form-control {
+    color: red;
+  }
+}
+
+.notifications {
+  color: white;
+  text-align: center;
+  .notice {
+    background-color: lightblue;
+  }
+  .alert {
+    background-color: red;
+  }
+}

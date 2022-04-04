@@ -13,7 +13,7 @@
   </tr>
   <% @movies.each do |movie| %>
     <tr>
-      <td class="centered_cell"><%= movie.id %></td>
+      <td class="centered_cell"><%= link_to movie.id, movie.image_url %></td>
       <td class="centered_cell"><%= movie.name %></td>
       <td class="centered_cell"><%= movie.year %></td>
       <td><%= movie.description %></td>

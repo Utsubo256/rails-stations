@@ -1,3 +1,9 @@
+<% flash.each do |message_type, message| %>
+  <div class="notifications">
+    <div class="<%= message_type %>"><%= message %></div>
+  </div>
+<% end %>
+
 <h1>映画一覧</h1>
 
 <table>
@@ -13,7 +19,7 @@
   </tr>
   <% @movies.each do |movie| %>
     <tr>
-      <td class="centered_cell"><%= link_to movie.id, movie.image_url %></td>
+      <td class="centered_cell"><%= link_to movie.id, edit_admin_movie_path(movie) %></td>
       <td class="centered_cell"><%= movie.name %></td>
       <td class="centered_cell"><%= movie.year %></td>
       <td><%= movie.description %></td>

@@ -10,7 +10,7 @@
 <% end %>
 
 <div class="movie_box">
-  <% @movies.each do |movie| %>
+  <% @results.each do |movie| %>
     <ul class="movie_item">
       <%= image_tag movie.image_url, size: '280x280' %>
       <li><%= movie.name %></li>

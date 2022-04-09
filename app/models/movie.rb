@@ -3,5 +3,5 @@ class Movie < ApplicationRecord
   validates :year, presence: true, length: { maximum: 45 }
   validates :description, presence: true
   validates :image_url, presence: true, length: { maximum: 150 }
-  validates :is_showing, presence: true
+  validates :is_showing, inclusion: { in: [true, false]}
 end
